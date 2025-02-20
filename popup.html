@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email Security</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Email Security</h1>
+    </header>
+
+    <main>
+      <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Analyzing email...</p>
+      </div>
+
+      <div id="error-message" class="error hidden"></div>
+
+      <section id="analysis-results" class="section hidden">
+        <div class="risk-score-container">
+          <div class="score-circle">
+            <span id="risk-score">0</span>
+          </div>
+          <div class="risk-level">
+            <span id="risk-level">Low</span>
+            <span class="risk-label">Risk Level</span>
+          </div>
+        </div>
+
+        <div class="warnings-container">
+          <h2>Analysis Details</h2>
+          <ul id="warnings-list"></ul>
+        </div>
+      </section>
+
+      <button id="analyze-btn" class="primary-btn">
+        <span class="btn-text">Analyze Email</span>
+      </button>
+    </main>
+
+    <footer>
+      <p class="disclaimer">This tool assists in phishing detection but does not guarantee email safety. Always exercise caution with suspicious emails.</p>
+    </footer>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "phishing-email-detector",
+  "version": "1.0.0",
+  "description": "A powerful Chrome extension that helps detect potential phishing emails in Gmail, Outlook, and Yahoo Mail using advanced heuristics and VirusTotal integration.",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
